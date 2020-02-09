@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurante Cadena Trassierra</title>
+    <link rel="stylesheet" href="../../../libreria/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../libreria/jquery-ui.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" autocomplete="off">
+                        <fieldset>
+                            <legend class="text-center header">RESTAURANTES TRASSIERRA</legend>
+
+                            <div class="row form-group justify-content-center">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-utensils bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="rest" name="rest" class="form-control">
+                                        <option value="">Seleccione un restaurante</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group justify-content-center">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-users bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="emp" name="emp" class="form-control">
+                                        <option value="">Seleccione un empleado</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row form-group justify-content-center">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-calendar-alt bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <input id="fechaR" name="fechaR" type="date" placeholder="Fecha de Reserva" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row form-group justify-content-center">
+                                <div class="col-md-4 text-center">
+                                    <button class="boton btn btn-primary btn-lg">Mostrar comedor</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="mesas"></div>
+        <div id="capacomedor">
+            <div class="well well-sm">
+                <div class="form-group justify-content-center">
+                    <div class="col-md-12" id="comedor">
+                        <legend class="text-center header">COMEDOR</legend>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reservas">
+            <form class="frmReservas" autocomplete="off">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="nameApeCli">Nombre y Apellidos:</label>
+                        <input type="text" class="form-control" id="nameApeCli" name="nameApeCli">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="numCom">Número comensales:</label>
+                        <input type="number" class="form-control" id="numCom" name="numCom">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="boton btn btn-primary btn-lg">Reservar</button>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- librerias -->
+    <script src="../../../libreria/jquery-3.4.1.min.js"></script>
+    <script src="../../../libreria/jquery-ui.min.js"></script>
+    <script src="../../../libreria/popper.min.js"></script>
+    <script src="../../../libreria/bootstrap.min.js"></script>
+    <script src="../../../libreria/fontawesome/js/all.min.js"></script>
+    <script src="../../../libreria/crearXML.js"></script>
+    <script src="../../../libreria/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+    <script src="../../../libreria/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inmobiliaria Trassierra</title>
+    <link rel="stylesheet" href="../../../libreria/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../libreria/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../libreria/datatables.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="formInmo" autocomplete="off">
+                        <fieldset>
+                            <legend class="text-center header">Alquiler de Inmuebles Trassierra</legend>
+
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-users bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <input id="dni" name="dni" type="text" placeholder="Introduzca DNI" class="form-control"> <small>valid nº: 07141461F</small>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-home bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="zona" name="zona" class="form-control">
+                                        <option value="">Seleccione una zona</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-sort-numeric-up bigicon"></i></span>
+                                    <div class="col-md-4 check">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="numhab" id="numhab1" value="1">
+                                        <label class="form-check-label" for="numhab1">
+                                            1 habitación
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="numhab" id="numhab2" value="2">
+                                        <label class="form-check-label" for="numhab2">
+                                            2 habitaciones
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="numhab" id="numhab3" value="3">
+                                        <label class="form-check-label" for="numhab3">
+                                            3 habitaciones
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="numhab" id="numhab4" value="4">
+                                        <label class="form-check-label" for="numhab4">
+                                            4 habitaciones
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-euro-sign bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="precio" name="precio" class="form-control">
+                                        <option value="">Precio Máximo</option>
+                                        <option value="300"><=300€</option>
+                                        <option value="600"><=600€</option>
+                                        <option value="800"><=800€</option>
+                                        <option value="1000"><=1000€</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-row text-center">
+                                <div class="col-md-4">
+                                    <button type="submit" class="boton btn btn-primary btn-lg">Buscar</button>
+
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table id="inmuebles" class="col-12">
+                    <thead>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- librerias -->
+    <script src="../../../libreria/jquery-3.4.1.min.js"></script>
+    <script src="../../../libreria/jquery-ui.min.js"></script>
+    <script src="../../../libreria/datatables.min.js"></script>
+    <script src="../../../libreria/popper.min.js"></script>
+    <script src="../../../libreria/bootstrap.min.js"></script>
+    <script src="../../../libreria/fontawesome/js/all.min.js"></script>
+    <script src="../../../libreria/crearXML.js"></script>
+    <script src="../../../libreria/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+    <script src="../../../libreria/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
